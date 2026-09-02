@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import OnePageCheckout from '../components/react/OnePageCheckout';
+import storeConfig from '../data/storeConfig.json';
+---
+
+<Layout
+  title={`Checkout & Pembayaran - ${storeConfig.storeName}`}
+  description="Selesaikan pesanan Anda dengan One-Page Checkout cepat. Pilihan kurir JNE, J&T, SiCepat, dan pembayaran QRIS otomatis."
+>
+  <OnePageCheckout client:load />
+</Layout>

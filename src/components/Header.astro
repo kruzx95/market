@@ -1,0 +1,76 @@
+---
+import CartCounter from './react/CartCounter';
+import storeConfig from '../data/storeConfig.json';
+import { Search, ShieldCheck, Sparkles, LayoutDashboard } from 'lucide-react';
+---
+
+<!-- Top Promo Announcement Bar -->
+<div class="bg-slate-900 text-white text-xs py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+  <span class="inline-block animate-pulse">⚡</span>
+  <span>{storeConfig.bannerAnnouncement}</span>
+</div>
+
+<!-- Main Sticky Header -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20 gap-4">
+      
+      <!-- Mobile menu toggle & Logo -->
+      <div class="flex items-center gap-4">
+        <a href="/" class="group flex flex-col">
+          <span class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-slate-900 group-hover:text-slate-700 transition-colors uppercase">
+            {storeConfig.storeName}
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold -mt-1 hidden sm:block">
+            {storeConfig.storeTagline}
+          </span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-slate-900 transition-colors py-1 hover:border-b-2 hover:border-slate-900">
+          Beranda
+        </a>
+        <a href="/#katalog" class="hover:text-slate-900 transition-colors py-1 hover:border-b-2 hover:border-slate-900">
+          Koleksi Pria & Wanita
+        </a>
+        <a href="/#promo" class="hover:text-slate-900 transition-colors py-1 hover:border-b-2 hover:border-slate-900 flex items-center gap-1 text-emerald-600 font-semibold">
+          <Sparkles className="w-3.5 h-3.5" />
+          Promo Spesial
+        </a>
+        <a href="/#keunggulan" class="hover:text-slate-900 transition-colors py-1 hover:border-b-2 hover:border-slate-900">
+          Kenapa Kami
+        </a>
+      </nav>
+
+      <!-- Right Actions: Admin shortcut, Search, WhatsApp, Cart -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Admin Dashboard Shortcut for Demo -->
+        <a 
+          href="/admin" 
+          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors border border-slate-200/80"
+          title="Masuk ke Panel Pengelola Toko"
+        >
+          <LayoutDashboard className="w-3.5 h-3.5 text-slate-600" />
+          <span>Panel Toko</span>
+        </a>
+
+        <!-- WhatsApp Quick Chat -->
+        <a
+          href={`https://wa.me/${storeConfig.whatsappNumber}?text=${encodeURIComponent(`Halo Admin ${storeConfig.storeName}, saya ingin bertanya tentang produk Anda.`)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:flex items-center gap-1.5 text-xs font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-3 py-1.5 rounded-full transition-colors border border-emerald-200"
+        >
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Chat CS</span>
+        </a>
+
+        <!-- Cart Button -->
+        <CartCounter client:load />
+      </div>
+
+    </div>
+  </div>
+</header>

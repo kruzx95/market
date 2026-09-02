@@ -1,0 +1,147 @@
+[
+  {
+    "province": "DKI Jakarta",
+    "cities": [
+      {
+        "cityName": "Jakarta Selatan",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Tebet", "postalCode": "12810", "baseRate": 10000 },
+          { "districtName": "Setiabudi", "postalCode": "12910", "baseRate": 10000 },
+          { "districtName": "Kebayoran Baru", "postalCode": "12110", "baseRate": 10000 },
+          { "districtName": "Cilandak", "postalCode": "12430", "baseRate": 10000 },
+          { "districtName": "Pasar Minggu", "postalCode": "12520", "baseRate": 10000 }
+        ]
+      },
+      {
+        "cityName": "Jakarta Pusat",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Menteng", "postalCode": "10310", "baseRate": 10000 },
+          { "districtName": "Tanah Abang", "postalCode": "10250", "baseRate": 10000 },
+          { "districtName": "Kemayoran", "postalCode": "10620", "baseRate": 10000 }
+        ]
+      },
+      {
+        "cityName": "Jakarta Barat",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Kebon Jeruk", "postalCode": "11530", "baseRate": 10000 },
+          { "districtName": "Grogol Petamburan", "postalCode": "11470", "baseRate": 10000 },
+          { "districtName": "Cengkareng", "postalCode": "11730", "baseRate": 10000 }
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Jawa Barat",
+    "cities": [
+      {
+        "cityName": "Bandung",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Coblong", "postalCode": "40132", "baseRate": 11000 },
+          { "districtName": "Sukajadi", "postalCode": "40162", "baseRate": 11000 },
+          { "districtName": "Lengkong", "postalCode": "40261", "baseRate": 11000 },
+          { "districtName": "Sumur Bandung", "postalCode": "40111", "baseRate": 11000 }
+        ]
+      },
+      {
+        "cityName": "Bekasi",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Bekasi Barat", "postalCode": "17145", "baseRate": 10000 },
+          { "districtName": "Bekasi Selatan", "postalCode": "17148", "baseRate": 10000 },
+          { "districtName": "Pondok Gede", "postalCode": "17411", "baseRate": 10000 }
+        ]
+      },
+      {
+        "cityName": "Bogor",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Bogor Tengah", "postalCode": "16121", "baseRate": 11000 },
+          { "districtName": "Bogor Selatan", "postalCode": "16132", "baseRate": 11000 },
+          { "districtName": "Bogor Timur", "postalCode": "16143", "baseRate": 11000 }
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "cities": [
+      {
+        "cityName": "Surabaya",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Gubeng", "postalCode": "60281", "baseRate": 16000 },
+          { "districtName": "Wonokromo", "postalCode": "60243", "baseRate": 16000 },
+          { "districtName": "Tegalsari", "postalCode": "60262", "baseRate": 16000 }
+        ]
+      },
+      {
+        "cityName": "Malang",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Klojen", "postalCode": "65111", "baseRate": 18000 },
+          { "districtName": "Lowokwaru", "postalCode": "65141", "baseRate": 18000 }
+        ]
+      }
+    ]
+  },
+  {
+    "province": "DI Yogyakarta",
+    "cities": [
+      {
+        "cityName": "Yogyakarta",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Danurejan", "postalCode": "55211", "baseRate": 15000 },
+          { "districtName": "Gondokusuman", "postalCode": "55221", "baseRate": 15000 },
+          { "districtName": "Mergangsan", "postalCode": "55151", "baseRate": 15000 }
+        ]
+      },
+      {
+        "cityName": "Sleman",
+        "type": "Kabupaten",
+        "districts": [
+          { "districtName": "Depok", "postalCode": "55281", "baseRate": 15000 },
+          { "districtName": "Mlati", "postalCode": "55284", "baseRate": 15000 }
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Bali",
+    "cities": [
+      {
+        "cityName": "Denpasar",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Denpasar Selatan", "postalCode": "80221", "baseRate": 22000 },
+          { "districtName": "Denpasar Barat", "postalCode": "80119", "baseRate": 22000 }
+        ]
+      },
+      {
+        "cityName": "Badung",
+        "type": "Kabupaten",
+        "districts": [
+          { "districtName": "Kuta", "postalCode": "80361", "baseRate": 22000 },
+          { "districtName": "Kuta Utara", "postalCode": "80361", "baseRate": 22000 }
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Sumatera Utara",
+    "cities": [
+      {
+        "cityName": "Medan",
+        "type": "Kota",
+        "districts": [
+          { "districtName": "Medan Baru", "postalCode": "20153", "baseRate": 28000 },
+          { "districtName": "Medan Petisah", "postalCode": "20112", "baseRate": 28000 }
+        ]
+      }
+    ]
+  }
+]

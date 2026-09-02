@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DynamicHero from '../components/react/DynamicHero';
+import DynamicSectionTitle from '../components/react/DynamicSectionTitle';
+import ProductGridWithFilter from '../components/react/ProductGridWithFilter';
+import DynamicStoryAndTestimonials from '../components/react/DynamicStoryAndTestimonials';
+import products from '../data/products.json';
+import storeConfig from '../data/storeConfig.json';
+import type { Product } from '../types';
+
+const allProducts = products as Product[];
+---
+
+<Layout title={`${storeConfig.storeName} - White-Label Store`}>
+  
+  <!-- 1 & 2. DYNAMIC HERO & VOUCHERS (CLEAN LIGHT AESTHETIC) -->
+  <DynamicHero client:load />
+
+  <!-- 3. MAIN PRODUCT CATALOG -->
+  <section id="katalog" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <!-- Dynamic Section Title (React Island) -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <DynamicSectionTitle client:load />
+      </div>
+
+      <!-- Interactive React Product Grid with Filter & Sort -->
+      <ProductGridWithFilter client:load initialProducts={allProducts} />
+
+    </div>
+  </section>
+
+  <!-- 4 & 5. DYNAMIC CRAFTSMANSHIP STORY & TESTIMONIALS (CLEAN LIGHT PER THEME) -->
+  <DynamicStoryAndTestimonials client:load />
+
+</Layout>

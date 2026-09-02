@@ -1,0 +1,518 @@
+import type { Product, StoreConfig } from '../types';
+import productsFashion from './products.json';
+
+export interface ThemePreset {
+  id: 'fashion' | 'skincare' | 'streetwear' | 'coffee';
+  name: string;
+  industry: string;
+  storeConfig: StoreConfig & {
+    heroTitle: string;
+    heroSubtitle: string;
+    heroImage: string;
+    badgeText: string;
+  };
+  styles: {
+    primaryColor: string; // Warna tombol CTA & navbar
+    primaryHover: string;
+    accentColor: string; // Warna badge & link
+    accentLight: string;
+    bgColor: string; // Background halaman
+    heroGradient: string; // Gradasi background hero
+    cardBg: string;
+    textPrimary: string;
+    textSecondary: string;
+    fontHeading: string;
+    borderRadius: string;
+    badgeBg: string;
+    badgeText: string;
+  };
+  products: Product[];
+}
+
+export const THEME_PRESETS: Record<string, ThemePreset> = {
+  // 1. THEME FASHION: Clean Aesthetic Slate & Ivory (Zara / Uniqlo Look)
+  fashion: {
+    id: 'fashion',
+    name: 'KALA Studio',
+    industry: 'Fashion & Apparel',
+    storeConfig: {
+      storeName: 'KALA Studio',
+      storeTagline: 'Timeless Everyday Apparel',
+      storeSubtitle: 'Pakaian Esensial Tropis dengan Material Alami Berkualitas Tinggi. Bebas Biaya Admin.',
+      whatsappNumber: '6281234567890',
+      whatsappAdminName: 'Rani - Customer Care',
+      instagramHandle: '@kalastudio.id',
+      operationalHours: 'Senin - Sabtu (08:00 - 20:00 WIB)',
+      originCity: 'Jakarta Selatan',
+      address: 'Jl. Senopati No. 45, Kebayoran Baru, Jakarta Selatan',
+      currency: 'IDR',
+      freeShippingMinAmount: 400000,
+      activeVouchers: [
+        {
+          code: 'FASHIONHEMAT',
+          discountType: 'PERCENT',
+          value: 15,
+          minSpend: 200000,
+          description: 'Diskon 15% untuk pembelian minimal Rp 200.000',
+        },
+        {
+          code: 'ONGKIRGRATIS',
+          discountType: 'FIXED',
+          value: 20000,
+          minSpend: 300000,
+          description: 'Potongan Ongkir Rp 20.000 min. belanja Rp 300.000',
+        },
+      ],
+      heroTitle: 'Pakaian Esensial dengan Material Alami Terbaik.',
+      heroSubtitle: 'Didesain khusus untuk iklim tropis Indonesia. Serat 100% French Linen dan Heavyweight Combed Cotton yang adem dan bertekstur mewah.',
+      heroImage: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+      badgeText: '✨ Koleksi Esensial Tropis 2026',
+    },
+    styles: {
+      primaryColor: '#0f172a', // Clean Deep Slate
+      primaryHover: '#334155',
+      accentColor: '#059669', // Fresh Emerald
+      accentLight: '#ecfdf5',
+      bgColor: '#f8fafc', // Light slate off-white
+      heroGradient: 'linear-gradient(135deg, #f1f5f9 0%, #ffffff 50%, #e2e8f0 100%)',
+      cardBg: '#ffffff',
+      textPrimary: '#0f172a',
+      textSecondary: '#64748b',
+      fontHeading: 'Fraunces, Georgia, serif',
+      borderRadius: '1rem',
+      badgeBg: '#e2e8f0',
+      badgeText: '#0f172a',
+    },
+    products: productsFashion as Product[],
+  },
+
+  // 2. THEME SKINCARE: Clean Rose & Pearl Blush (Somethinc / Clean Beauty Look)
+  skincare: {
+    id: 'skincare',
+    name: 'LUMINA Skin',
+    industry: 'Skincare & Kecantikan',
+    storeConfig: {
+      storeName: 'LUMINA Skin',
+      storeTagline: 'Dermatology-Backed Clean Beauty',
+      storeSubtitle: 'Formulasi Aktif Teruji Klinis & Bersertifikat BPOM untuk Kulit Cerah Alami Bebas Kusam.',
+      whatsappNumber: '6281299887766',
+      whatsappAdminName: 'Dr. Bella - Beauty Advisor',
+      instagramHandle: '@luminaskin.official',
+      operationalHours: 'Setiap Hari (09:00 - 21:00 WIB)',
+      originCity: 'Jakarta Barat',
+      address: 'Puri Indah Mall Arcade Lt. 2 No. 18, Jakarta Barat',
+      currency: 'IDR',
+      freeShippingMinAmount: 250000,
+      activeVouchers: [
+        {
+          code: 'GLOWING20',
+          discountType: 'PERCENT',
+          value: 20,
+          minSpend: 150000,
+          description: 'Diskon 20% khusus paket Glowing Serum',
+        },
+        {
+          code: 'BPOMBEBASONGKIR',
+          discountType: 'FIXED',
+          value: 15000,
+          minSpend: 200000,
+          description: 'Subsidi ongkir Rp 15.000',
+        },
+      ],
+      heroTitle: 'Rahasia Kulit Cerah & Glowing Alami Tanpa Iritasi.',
+      heroSubtitle: 'Diformulasikan dengan Niacinamide 10% + Hyaluronic Triple Complex. Bersertifikat BPOM & Halal MUI untuk merawat skin barrier.',
+      heroImage: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+      badgeText: '🌸 Formula Teruji Klinis BPOM',
+    },
+    styles: {
+      primaryColor: '#e11d48', // Vibrant Rose Pink
+      primaryHover: '#be123c',
+      accentColor: '#f43f5e',
+      accentLight: '#fff1f2',
+      bgColor: '#fffafb', // Soft Pearl Blush
+      heroGradient: 'linear-gradient(135deg, #fff1f2 0%, #ffffff 50%, #ffe4e6 100%)',
+      cardBg: '#ffffff',
+      textPrimary: '#881337',
+      textSecondary: '#9f1239',
+      fontHeading: 'Plus Jakarta Sans, sans-serif',
+      borderRadius: '1.25rem',
+      badgeBg: '#ffe4e6',
+      badgeText: '#be123c',
+    },
+    products: [
+      {
+        id: 'skin-001',
+        slug: 'triple-hyaluronic-glowing-serum',
+        name: 'Triple Hyaluronic Glow Serum 30ml',
+        brand: 'LUMINA Skin',
+        tagline: 'Hydration Booster & Pencerah Wajah 7 Hari',
+        description: 'Serum dengan 3 molekul Hyaluronic Acid dan Niacinamide 10% yang menyerap ke lapisan kulit terdalam untuk mengunci kelembapan hingga 48 jam dan menyamarkan noda hitam bekas jerawat.',
+        price: 139000,
+        originalPrice: 189000,
+        discountPercentage: 26,
+        category: 'Wanita',
+        images: [
+          'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1608248597359-25f0a3e811c7?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 5.0,
+        soldCount: 1280,
+        isBestSeller: true,
+        isNewArrival: false,
+        weightGrams: 150,
+        material: 'BPOM NA18230192831 | Niacinamide 10%, Centella Asiatica, Hyaluron 3X',
+        careInstructions: [
+          'Gunakan 3-4 tetes pada wajah yang telah dibersihkan',
+          'Tepuk-tepuk lembut hingga meresap sempurna',
+          'Gunakan pagi & malam hari sebelum moisturizer',
+        ],
+        sizeChart: [{ size: '30 ml', chest: 30, length: 0 }],
+        variants: [
+          {
+            id: 'skin-var-30ml',
+            name: 'Standard Size 30ml',
+            color: 'Clear Essence',
+            colorHex: '#FDF2F8',
+            size: 'All Size',
+            stock: 45,
+            sku: 'LUM-SER-30ML',
+          },
+        ],
+      },
+      {
+        id: 'skin-002',
+        slug: 'ceramide-barrier-moisturizer-gel',
+        name: '5X Ceramide Barrier Repair Gel 50g',
+        brand: 'LUMINA Skin',
+        tagline: 'Memperbaiki Skin Barrier Rusak & Mengunci Kelembapan',
+        description: 'Moisturizer bertekstur gel air yang ringan dan langsung meleleh di kulit. Mengandung 5 jenis Ceramide murni untuk memperbaiki kemerahan.',
+        price: 159000,
+        originalPrice: 219000,
+        discountPercentage: 27,
+        category: 'Wanita',
+        images: [
+          'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 4.9,
+        soldCount: 940,
+        isBestSeller: true,
+        isNewArrival: true,
+        weightGrams: 200,
+        material: 'BPOM NA18230198471 | 5X Ceramide, Marine Collagen, Centella',
+        careInstructions: [
+          'Oleskan secara merata ke seluruh wajah dan leher',
+          'Dapat digunakan sebagai sleeping mask',
+        ],
+        sizeChart: [{ size: '50 gram', chest: 50, length: 0 }],
+        variants: [
+          {
+            id: 'skin-var-moi-50g',
+            name: 'Jar 50g',
+            color: 'Aqua Gel',
+            colorHex: '#E0F2FE',
+            size: 'All Size',
+            stock: 32,
+            sku: 'LUM-MOI-50G',
+          },
+        ],
+      },
+      {
+        id: 'skin-003',
+        slug: 'invisible-sunscreen-spf50-pa',
+        name: 'Invisible Watery Sunscreen SPF 50+ PA++++',
+        brand: 'LUMINA Skin',
+        tagline: 'No White Cast, Matte Finish & Tidak Lengket',
+        description: 'Tabir surya hibrida dengan perlindungan spektrum luas UVA/UVB dan Blue Light. Formula seringan air yang tidak perih di mata.',
+        price: 119000,
+        originalPrice: 159000,
+        discountPercentage: 25,
+        category: 'Wanita',
+        images: [
+          'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 4.9,
+        soldCount: 1520,
+        isBestSeller: false,
+        isNewArrival: true,
+        weightGrams: 100,
+        material: 'BPOM NA18231700192 | UV Filters, Mugwort, Vitamin C',
+        careInstructions: [
+          'Aplikasikan sebanyak 2 ruas jari 15 menit sebelum terpapar sinar matahari',
+        ],
+        sizeChart: [{ size: '40 ml', chest: 40, length: 0 }],
+        variants: [
+          {
+            id: 'skin-var-sun-40ml',
+            name: 'Tube 40ml',
+            color: 'White Matte',
+            colorHex: '#FFFFFF',
+            size: 'All Size',
+            stock: 60,
+            sku: 'LUM-SUN-40ML',
+          },
+        ],
+      },
+    ],
+  },
+
+  // 3. THEME STREETWEAR: Modern Clean Light Urban (Erigo / Urban Culture Look)
+  streetwear: {
+    id: 'streetwear',
+    name: 'NEO-PULSE',
+    industry: 'Streetwear & Urban Culture',
+    storeConfig: {
+      storeName: 'NEO-PULSE',
+      storeTagline: 'Contemporary Urban Streetwear',
+      storeSubtitle: 'Apparel Urban Kontemporer dengan Grafis Eksklusif & Material Heavyweight 330 GSM.',
+      whatsappNumber: '6281344556677',
+      whatsappAdminName: 'Crew Neo - Hype CS',
+      instagramHandle: '@neopulse.division',
+      operationalHours: '24/7 Online Store',
+      originCity: 'Bandung',
+      address: 'Jl. Riau No. 102, Citarum, Bandung, Jawa Barat',
+      currency: 'IDR',
+      freeShippingMinAmount: 350000,
+      activeVouchers: [
+        {
+          code: 'HYPECLUB',
+          discountType: 'PERCENT',
+          value: 20,
+          minSpend: 250000,
+          description: 'Diskon 20% Khusus Anggota Hype Club',
+        },
+      ],
+      heroTitle: 'Redefine Urban Culture & Street Style.',
+      heroSubtitle: 'Limited Drop Division 04. Heavyweight Fleece 330 GSM dengan Grafis High-Density Silkscreen dan potongan boxy kekinian.',
+      heroImage: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80',
+      badgeText: '⚡ LIMITED DROP 04 — READY STOCK',
+    },
+    styles: {
+      primaryColor: '#0284c7', // Vibrant Electric Blue
+      primaryHover: '#0369a1',
+      accentColor: '#0ea5e9',
+      accentLight: '#e0f2fe',
+      bgColor: '#f8fafc', // Clean Light Urban Grey
+      heroGradient: 'linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #f1f5f9 100%)',
+      cardBg: '#ffffff',
+      textPrimary: '#0f172a',
+      textSecondary: '#475569',
+      fontHeading: 'Plus Jakarta Sans, sans-serif',
+      borderRadius: '0.75rem',
+      badgeBg: '#e0f2fe',
+      badgeText: '#0369a1',
+    },
+    products: [
+      {
+        id: 'st-001',
+        slug: 'hoodie-heavyweight-cyber-division',
+        name: 'Cyber Division Boxy Hoodie 330 GSM',
+        brand: 'NEO-PULSE',
+        tagline: '100% Cotton Fleece Heavyweight dengan Double-Layered Hood',
+        description: 'Hoodie siluet boxy fit dengan tudung kepala ganda yang kokoh dan tidak lepek. Sablon grafis high-density plastisol tahan cuci mesin.',
+        price: 349000,
+        originalPrice: 449000,
+        discountPercentage: 22,
+        category: 'Outerwear',
+        images: [
+          'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 5.0,
+        soldCount: 480,
+        isBestSeller: true,
+        isNewArrival: true,
+        weightGrams: 750,
+        material: 'Heavyweight Cotton Fleece 330 GSM (Pre-Shrunk)',
+        careInstructions: [
+          'Cuci terbalik dengan air dingin',
+          'Jangan setrika langsung pada sablon',
+        ],
+        sizeChart: [
+          { size: 'M', chest: 60, length: 68, sleeve: 62 },
+          { size: 'L', chest: 64, length: 71, sleeve: 64 },
+          { size: 'XL', chest: 68, length: 74, sleeve: 66 },
+        ],
+        variants: [
+          {
+            id: 'st-var-blk-l',
+            name: 'Jet Black - L',
+            color: 'Jet Black',
+            colorHex: '#09090B',
+            size: 'L',
+            stock: 12,
+            sku: 'NP-HD-BLK-L',
+          },
+        ],
+      },
+      {
+        id: 'st-002',
+        slug: 'cargo-pants-tactical-wide',
+        name: 'Modular Tactical Cargo Pants',
+        brand: 'NEO-PULSE',
+        tagline: 'Ripstop Water Repellent dengan 6 Pocket Modular',
+        description: 'Celana kargo siluet baggy dengan material kain Ripstop militer anti-sobek dan anti-percikan air.',
+        price: 389000,
+        originalPrice: 489000,
+        discountPercentage: 20,
+        category: 'Celana',
+        images: [
+          'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 4.9,
+        soldCount: 310,
+        isBestSeller: true,
+        isNewArrival: false,
+        weightGrams: 550,
+        material: 'Military Grade Cotton Ripstop (DWR Coated)',
+        careInstructions: ['Cuci manual suhu normal', 'Gantung di tempat teduh'],
+        sizeChart: [
+          { size: 'M', chest: 80, length: 102 },
+          { size: 'L', chest: 86, length: 104 },
+        ],
+        variants: [
+          {
+            id: 'st-var-crg-m',
+            name: 'Stealth Grey - M',
+            color: 'Stealth Grey',
+            colorHex: '#27272A',
+            size: 'M',
+            stock: 14,
+            sku: 'NP-CRG-GRY-M',
+          },
+        ],
+      },
+    ],
+  },
+
+  // 4. THEME COFFEE: Creamy Oat & Caramel Warm Earth (Artisan Cafe Look)
+  coffee: {
+    id: 'coffee',
+    name: 'NUSA Roastery',
+    industry: 'Kopi Artisan & F&B',
+    storeConfig: {
+      storeName: 'NUSA Roastery',
+      storeTagline: 'Single Origin Indonesian Specialty Coffee',
+      storeSubtitle: 'Biji Kopi Pilihan Petani Nusantara yang Di-roasting Fresh Setiap Minggu.',
+      whatsappNumber: '6281122334455',
+      whatsappAdminName: 'Barista Rangga - Roastery Care',
+      instagramHandle: '@nusaroastery',
+      operationalHours: 'Senin - Minggu (07:00 - 22:00 WIB)',
+      originCity: 'Yogyakarta',
+      address: 'Jl. Palagan Tentara Pelajar Km. 9, Sleman, DI Yogyakarta',
+      currency: 'IDR',
+      freeShippingMinAmount: 300000,
+      activeVouchers: [
+        {
+          code: 'FRESHCOFFEE',
+          discountType: 'PERCENT',
+          value: 15,
+          minSpend: 100000,
+          description: 'Diskon 15% untuk pembelian Beans & Drip Bag',
+        },
+      ],
+      heroTitle: 'Cita Rasa Otentik Kopi Nusantara di Cangkir Anda.',
+      heroSubtitle: 'Diambil langsung dari petani lereng Gunung Gayo, Ijen, dan Toraja. Di-roasting dengan profil medium untuk aroma floral yang harum dan rasa manis alami.',
+      heroImage: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80',
+      badgeText: '☕ FRESH ROASTED BEANS — SPECIALTY GRADE 1',
+    },
+    styles: {
+      primaryColor: '#b45309', // Warm Amber Caramel
+      primaryHover: '#92400e',
+      accentColor: '#d97706',
+      accentLight: '#fef3c7',
+      bgColor: '#faf6f0', // Creamy Warm Oat Beige
+      heroGradient: 'linear-gradient(135deg, #fef3c7 0%, #ffffff 50%, #fed7aa 100%)',
+      cardBg: '#ffffff',
+      textPrimary: '#451a03', // Warm Deep Roast
+      textSecondary: '#78350f',
+      fontHeading: 'Fraunces, Georgia, serif',
+      borderRadius: '1rem',
+      badgeBg: '#fef3c7',
+      badgeText: '#92400e',
+    },
+    products: [
+      {
+        id: 'cof-001',
+        slug: 'gayo-natural-specialty-beans-250g',
+        name: 'Aceh Gayo Natural Anaerobic 200g',
+        brand: 'NUSA Roastery',
+        tagline: 'Notes: Sweet Peach, Jasmine, and Brown Sugar',
+        description: 'Biji kopi Arabika single origin dari ketinggian 1.600 mdpl Takengon, Aceh Tengah. Proses fermentasi anaerobik 72 jam menghasilkan rasa manis buah peach dan aroma melati yang lembut.',
+        price: 115000,
+        originalPrice: 145000,
+        discountPercentage: 20,
+        category: 'Aksesoris',
+        images: [
+          'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 5.0,
+        soldCount: 820,
+        isBestSeller: true,
+        isNewArrival: false,
+        weightGrams: 220,
+        material: '100% Arabika Specialty Grade 1 | Roast Date: Fresh Weekly',
+        careInstructions: [
+          'Simpan di wadah kedap udara bersuhu ruangan',
+          'Konsumsi terbaik dalam 3 bulan setelah tanggal roasting',
+        ],
+        sizeChart: [{ size: '200 gram', chest: 200, length: 0 }],
+        variants: [
+          {
+            id: 'cof-var-beans',
+            name: 'Biji Utuh (Whole Beans)',
+            color: 'Roasted Brown',
+            colorHex: '#78350F',
+            size: 'All Size',
+            stock: 35,
+            sku: 'NUS-GYO-WB',
+          },
+          {
+            id: 'cof-var-ground-v60',
+            name: 'Giling Medium (V60 / Filter)',
+            color: 'Ground Powder',
+            colorHex: '#92400E',
+            size: 'All Size',
+            stock: 28,
+            sku: 'NUS-GYO-V60',
+          },
+        ],
+      },
+      {
+        id: 'cof-002',
+        slug: 'drip-bag-coffee-artisan-box',
+        name: 'Drip Bag Coffee Box (Isi 10 Sachet)',
+        brand: 'NUSA Roastery',
+        tagline: 'Kopi Specialty Praktis Tinggal Seduh Air Panas',
+        description: 'Solusi ngopi enak di kantor atau saat travelling tanpa alat seduh khusus. Berisi kurasi 5 varian single origin Nusantara terbaik.',
+        price: 98000,
+        originalPrice: 125000,
+        discountPercentage: 21,
+        category: 'Aksesoris',
+        images: [
+          'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
+        ],
+        rating: 4.9,
+        soldCount: 1140,
+        isBestSeller: true,
+        isNewArrival: true,
+        weightGrams: 180,
+        material: 'Isi 10 Sachet x 12 gram kopi murni',
+        careInstructions: ['Seduh dengan air panas 90-93°C sebanyak 150ml'],
+        sizeChart: [{ size: 'Box 10 pcs', chest: 10, length: 0 }],
+        variants: [
+          {
+            id: 'cof-var-drip-box',
+            name: 'Box 10 Sachet',
+            color: 'Craft Paper',
+            colorHex: '#D97706',
+            size: 'All Size',
+            stock: 50,
+            sku: 'NUS-DRP-10',
+          },
+        ],
+      },
+    ],
+  },
+};

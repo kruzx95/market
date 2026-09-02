@@ -1,0 +1,1 @@
+function e(e){return isNaN(e)?`Rp 0`:new Intl.NumberFormat(`id-ID`,{style:`currency`,currency:`IDR`,minimumFractionDigits:0,maximumFractionDigits:0}).format(e)}function t(e){return new Intl.NumberFormat(`id-ID`).format(e)}export{e as n,t};

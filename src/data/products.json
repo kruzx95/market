@@ -1,0 +1,407 @@
+[
+  {
+    "id": "prod-001",
+    "slug": "kemeja-linen-oversized-earthy",
+    "name": "Kemeja Linen Oversized Casual",
+    "brand": "KALA Studio",
+    "tagline": "Bahan Premium French Linen 100% Breathable & Adem",
+    "description": "Kemeja siluet oversized dengan kerah cuban modern. Ditenun dari serat linen alami Prancis yang sangat adem dan menyerap keringat, cocok untuk iklim tropis Indonesia. Memberikan kesan kasual yang tetap rapi dan berkelas.",
+    "price": 239000,
+    "originalPrice": 349000,
+    "discountPercentage": 31,
+    "category": "Kemeja",
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 4.9,
+    "soldCount": 428,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "weightGrams": 280,
+    "material": "100% French Natural Linen (Pre-washed)",
+    "careInstructions": [
+      "Cuci dengan air dingin di bawah 30°C",
+      "Gunakan deterjen lembut",
+      "Setrika suhu sedang saat masih sedikit lembap",
+      "Jangan gunakan pemutih pakaian"
+    ],
+    "sizeChart": [
+      { "size": "S", "chest": 54, "length": 70, "sleeve": 24 },
+      { "size": "M", "chest": 57, "length": 72, "sleeve": 25 },
+      { "size": "L", "chest": 60, "length": 74, "sleeve": 26 },
+      { "size": "XL", "chest": 63, "length": 76, "sleeve": 27 }
+    ],
+    "variants": [
+      {
+        "id": "var-001-olive-s",
+        "name": "Olive Green - S",
+        "color": "Olive Green",
+        "colorHex": "#556B2F",
+        "size": "S",
+        "stock": 8,
+        "sku": "KL-LNN-OLV-S"
+      },
+      {
+        "id": "var-001-olive-m",
+        "name": "Olive Green - M",
+        "color": "Olive Green",
+        "colorHex": "#556B2F",
+        "size": "M",
+        "stock": 14,
+        "sku": "KL-LNN-OLV-M"
+      },
+      {
+        "id": "var-001-olive-l",
+        "name": "Olive Green - L",
+        "color": "Olive Green",
+        "colorHex": "#556B2F",
+        "size": "L",
+        "stock": 11,
+        "sku": "KL-LNN-OLV-L"
+      },
+      {
+        "id": "var-001-olive-xl",
+        "name": "Olive Green - XL",
+        "color": "Olive Green",
+        "colorHex": "#556B2F",
+        "size": "XL",
+        "stock": 5,
+        "sku": "KL-LNN-OLV-XL"
+      },
+      {
+        "id": "var-001-sand-m",
+        "name": "Sand Beige - M",
+        "color": "Sand Beige",
+        "colorHex": "#D2B48C",
+        "size": "M",
+        "stock": 19,
+        "sku": "KL-LNN-SND-M"
+      },
+      {
+        "id": "var-001-sand-l",
+        "name": "Sand Beige - L",
+        "color": "Sand Beige",
+        "colorHex": "#D2B48C",
+        "size": "L",
+        "stock": 7,
+        "sku": "KL-LNN-SND-L"
+      },
+      {
+        "id": "var-001-black-l",
+        "name": "Onyx Black - L",
+        "color": "Onyx Black",
+        "colorHex": "#1E293B",
+        "size": "L",
+        "stock": 12,
+        "sku": "KL-LNN-BLK-L"
+      }
+    ]
+  },
+  {
+    "id": "prod-002",
+    "slug": "jaket-harrington-vintage-twill",
+    "name": "Jaket Harrington Vintage Twill",
+    "brand": "KALA Studio",
+    "tagline": "Classic British Silhouette dengan Furing Tartan Premium",
+    "description": "Outerwear ikonik dengan siluet timeless. Menggunakan material Cotton Twill 10oz yang kokoh dengan furing motif tartan katun adem. Dilengkapi resleting metal YKK anti macet dan kantong tersembunyi di bagian dalam.",
+    "price": 389000,
+    "originalPrice": 499000,
+    "discountPercentage": 22,
+    "category": "Outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 5.0,
+    "soldCount": 215,
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "weightGrams": 650,
+    "material": "Heavy Cotton Twill 10oz with Cotton Tartan Lining",
+    "careInstructions": [
+      "Dry clean direkomendasikan",
+      "Atau cuci manual dengan air dingin",
+      "Jangan diperas kencang",
+      "Gantung di tempat teduh"
+    ],
+    "sizeChart": [
+      { "size": "M", "chest": 56, "length": 66, "sleeve": 61 },
+      { "size": "L", "chest": 59, "length": 68, "sleeve": 63 },
+      { "size": "XL", "chest": 62, "length": 70, "sleeve": 65 }
+    ],
+    "variants": [
+      {
+        "id": "var-002-navy-m",
+        "name": "Midnight Navy - M",
+        "color": "Midnight Navy",
+        "colorHex": "#0F172A",
+        "size": "M",
+        "stock": 6,
+        "sku": "KL-HRR-NVY-M"
+      },
+      {
+        "id": "var-002-navy-l",
+        "name": "Midnight Navy - L",
+        "color": "Midnight Navy",
+        "colorHex": "#0F172A",
+        "size": "L",
+        "stock": 9,
+        "sku": "KL-HRR-NVY-L"
+      },
+      {
+        "id": "var-002-khaki-l",
+        "name": "Classic Khaki - L",
+        "color": "Classic Khaki",
+        "colorHex": "#C8B29B",
+        "size": "L",
+        "stock": 4,
+        "sku": "KL-HRR-KHK-L"
+      }
+    ]
+  },
+  {
+    "id": "prod-003",
+    "slug": "kaos-heavyweight-box-fit-24s",
+    "name": "Heavyweight Boxy Tee 24s",
+    "brand": "KALA Studio",
+    "tagline": "100% Combed Cotton 24s 220 GSM Anti-Melar",
+    "description": "Kaos berpotongan boxy fit modern dengan kerah rib tebal 2.5 cm yang tidak mudah melar sehabis dicuci berkali-kali. Ketebalan 220 GSM memberikan struktur yang tegak dan tidak terawang.",
+    "price": 129000,
+    "originalPrice": 169000,
+    "discountPercentage": 24,
+    "category": "Kaos",
+    "images": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 4.8,
+    "soldCount": 890,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "weightGrams": 220,
+    "material": "100% Cotton Combed 24s Heavyweight (220 GSM)",
+    "careInstructions": [
+      "Cuci dengan mesin putaran normal",
+      "Jangan disikat pada bagian sablon/label",
+      "Jemur terbalik"
+    ],
+    "sizeChart": [
+      { "size": "S", "chest": 52, "length": 68 },
+      { "size": "M", "chest": 55, "length": 70 },
+      { "size": "L", "chest": 58, "length": 72 },
+      { "size": "XL", "chest": 61, "length": 74 }
+    ],
+    "variants": [
+      {
+        "id": "var-003-white-m",
+        "name": "Off White - M",
+        "color": "Off White",
+        "colorHex": "#F8FAFC",
+        "size": "M",
+        "stock": 25,
+        "sku": "KL-TEE-WHT-M"
+      },
+      {
+        "id": "var-003-white-l",
+        "name": "Off White - L",
+        "color": "Off White",
+        "colorHex": "#F8FAFC",
+        "size": "L",
+        "stock": 30,
+        "sku": "KL-TEE-WHT-L"
+      },
+      {
+        "id": "var-003-charcoal-l",
+        "name": "Charcoal Grey - L",
+        "color": "Charcoal Grey",
+        "colorHex": "#334155",
+        "size": "L",
+        "stock": 18,
+        "sku": "KL-TEE-CHC-L"
+      },
+      {
+        "id": "var-003-terracotta-m",
+        "name": "Terracotta - M",
+        "color": "Terracotta",
+        "colorHex": "#B45309",
+        "size": "M",
+        "stock": 12,
+        "sku": "KL-TEE-TRC-M"
+      }
+    ]
+  },
+  {
+    "id": "prod-004",
+    "slug": "celana-pleated-wide-leg-trousers",
+    "name": "Pleated Wide Leg Trousers",
+    "brand": "KALA Studio",
+    "tagline": "Celana Formal & Semi-Kasual dengan Drapery Mewah",
+    "description": "Celana panjang model wide-leg dengan aksen lipit (pleats) di bagian depan. Menggunakan bahan semi-wool blend yang jatuh dengan indah dan tidak mudah kusut. Cocok dipadukan dengan kemeja maupun kaos kasual.",
+    "price": 279000,
+    "originalPrice": 369000,
+    "discountPercentage": 24,
+    "category": "Celana",
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 4.9,
+    "soldCount": 312,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "weightGrams": 420,
+    "material": "Semi-Wool Poly Twill Blend (Wrinkle Resistant)",
+    "careInstructions": [
+      "Cuci dengan putaran lembut",
+      "Gantung saat menjemur untuk menjaga lipatan pleats",
+      "Setrika dengan uap atau suhu sedang"
+    ],
+    "sizeChart": [
+      { "size": "S", "chest": 74, "length": 98 },
+      { "size": "M", "chest": 78, "length": 100 },
+      { "size": "L", "chest": 84, "length": 102 },
+      { "size": "XL", "chest": 90, "length": 104 }
+    ],
+    "variants": [
+      {
+        "id": "var-004-charcoal-m",
+        "name": "Charcoal Grey - M",
+        "color": "Charcoal Grey",
+        "colorHex": "#334155",
+        "size": "M",
+        "stock": 10,
+        "sku": "KL-TRS-CHC-M"
+      },
+      {
+        "id": "var-004-charcoal-l",
+        "name": "Charcoal Grey - L",
+        "color": "Charcoal Grey",
+        "colorHex": "#334155",
+        "size": "L",
+        "stock": 8,
+        "sku": "KL-TRS-CHC-L"
+      },
+      {
+        "id": "var-004-cream-m",
+        "name": "Cream Sand - M",
+        "color": "Cream Sand",
+        "colorHex": "#E2D9C8",
+        "size": "M",
+        "stock": 15,
+        "sku": "KL-TRS-CRM-M"
+      }
+    ]
+  },
+  {
+    "id": "prod-005",
+    "slug": "blouse-rayon-silk-drape",
+    "name": "Blouse Rayon Silk Drape Flowy",
+    "brand": "KALA Studio",
+    "tagline": "Blouse Elegan dengan Sentuhan Kilap Lembut & Adem",
+    "description": "Blouse wanita berpotongan loose dengan bahan Rayon Silk premium. Tekstur jatuh yang sangat mewah saat dipakai jalan, tidak panas di kulit, serta dilengkapi aksen kancing mutiara vintage di pergelangan tangan.",
+    "price": 219000,
+    "originalPrice": 299000,
+    "discountPercentage": 27,
+    "category": "Wanita",
+    "images": [
+      "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 4.9,
+    "soldCount": 540,
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "weightGrams": 200,
+    "material": "Premium Rayon Silk Twill Grade A",
+    "careInstructions": [
+      "Cuci manual dengan tangan",
+      "Gunakan sampo atau deterjen sutra",
+      "Jangan diperas putar"
+    ],
+    "sizeChart": [
+      { "size": "S", "chest": 98, "length": 65 },
+      { "size": "M", "chest": 104, "length": 67 },
+      { "size": "L", "chest": 110, "length": 69 }
+    ],
+    "variants": [
+      {
+        "id": "var-005-sage-s",
+        "name": "Sage Green - S",
+        "color": "Sage Green",
+        "colorHex": "#9CA986",
+        "size": "S",
+        "stock": 10,
+        "sku": "KL-BLS-SGE-S"
+      },
+      {
+        "id": "var-005-sage-m",
+        "name": "Sage Green - M",
+        "color": "Sage Green",
+        "colorHex": "#9CA986",
+        "size": "M",
+        "stock": 14,
+        "sku": "KL-BLS-SGE-M"
+      },
+      {
+        "id": "var-005-rose-m",
+        "name": "Dusty Rose - M",
+        "color": "Dusty Rose",
+        "colorHex": "#D4A5A5",
+        "size": "M",
+        "stock": 8,
+        "sku": "KL-BLS-RSE-M"
+      }
+    ]
+  },
+  {
+    "id": "prod-006",
+    "slug": "totebag-canvas-water-repellent",
+    "name": "Totebag Canvas 16oz Water Repellent",
+    "brand": "KALA Studio",
+    "tagline": "Tas Kanvas Tebal Anti-Percikan Air Muat Laptop 15 Inch",
+    "description": "Tas jinjing harian dari material kanvas katun 16oz yang tebal dilapisi pelindung water repellent. Dilengkapi kompartemen laptop berbusa empuk dan saku botol minum di bagian samping dalam.",
+    "price": 169000,
+    "originalPrice": 229000,
+    "discountPercentage": 26,
+    "category": "Aksesoris",
+    "images": [
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "rating": 4.9,
+    "soldCount": 410,
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "weightGrams": 380,
+    "material": "Cotton Canvas 16oz with DWR Water Repellent Coating",
+    "careInstructions": [
+      "Bersihkan noda dengan sikat halus & air sabun",
+      "Jangan cuci di mesin cuci"
+    ],
+    "sizeChart": [
+      { "size": "All Size", "chest": 40, "length": 35 }
+    ],
+    "variants": [
+      {
+        "id": "var-006-olive-all",
+        "name": "Army Green - All Size",
+        "color": "Army Green",
+        "colorHex": "#4B5320",
+        "size": "All Size",
+        "stock": 20,
+        "sku": "KL-BAG-ARM-ALL"
+      },
+      {
+        "id": "var-006-black-all",
+        "name": "Matte Black - All Size",
+        "color": "Matte Black",
+        "colorHex": "#1E293B",
+        "size": "All Size",
+        "stock": 25,
+        "sku": "KL-BAG-BLK-ALL"
+      }
+    ]
+  }
+]

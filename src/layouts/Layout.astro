@@ -1,0 +1,103 @@
+---
+import '../styles/global.css';
+import DynamicHeader from '../components/react/DynamicHeader';
+import DynamicFooter from '../components/react/DynamicFooter';
+import CartDrawer from '../components/react/CartDrawer';
+import ThemeSwitcherBar from '../components/react/ThemeSwitcherBar';
+import storeConfig from '../data/storeConfig.json';
+import { MessageCircle } from 'lucide-react';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = `${storeConfig.storeName} - White-Label Store`,
+  description = storeConfig.storeSubtitle,
+  image = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Instant Pre-paint Theme Sync Script (Eliminates Theme Flash) -->
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('kala_active_theme') || 'fashion';
+          var palettes = {
+            fashion: { primary: '#0f172a', bg: '#f8fafc', accent: '#059669', text: '#0f172a' },
+            skincare: { primary: '#e11d48', bg: '#fffafb', accent: '#f43f5e', text: '#881337' },
+            streetwear: { primary: '#0284c7', bg: '#f8fafc', accent: '#0ea5e9', text: '#0f172a' },
+            coffee: { primary: '#b45309', bg: '#faf6f0', accent: '#d97706', text: '#451a03' }
+          };
+          var p = palettes[saved] || palettes.fashion;
+          document.documentElement.style.setProperty('--color-primary', p.primary);
+          document.documentElement.style.setProperty('--color-bg', p.bg);
+          document.documentElement.style.setProperty('--color-accent', p.accent);
+          document.documentElement.style.backgroundColor = p.bg;
+          document.documentElement.classList.remove('dark');
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- SEO Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+  </head>
+  <body class="bg-slate-50 min-h-screen flex flex-col transition-colors duration-300">
+    <!-- Dynamic Responsive Header -->
+    <DynamicHeader client:load />
+
+    <!-- Main Page Content -->
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <!-- Global Cart Drawer (React Island) -->
+    <CartDrawer client:load />
+
+    <!-- Interactive White-Label Multi-Theme Switcher -->
+    <ThemeSwitcherBar client:load />
+
+    <!-- Floating WhatsApp Assistance Button -->
+    <a
+      href={`https://wa.me/${storeConfig.whatsappNumber}?text=${encodeURIComponent(`Halo Admin, saya sedang melihat website dan ingin bertanya.`)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-float flex items-center gap-2 transition-all hover:scale-105 group"
+      aria-label="Chat WhatsApp Admin"
+    >
+      <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
+      <span class="text-xs font-bold hidden sm:inline-block">Tanya CS</span>
+      <span class="absolute -top-1 -right-1 flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+      </span>
+    </a>
+
+    <!-- Dynamic Footer Section -->
+    <DynamicFooter client:load />
+  </body>
+</html>

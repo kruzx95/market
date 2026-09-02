@@ -1,0 +1,18 @@
+---
+import AdminDashboard from '../../components/react/AdminDashboard';
+import storeConfig from '../../data/storeConfig.json';
+import '../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Pengelola Toko - {storeConfig.storeName}</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body class="bg-slate-900 min-h-screen">
+    <AdminDashboard client:load />
+  </body>
+</html>
